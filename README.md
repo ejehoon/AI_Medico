@@ -1,4 +1,4 @@
-# AI MEDICO
+<img width="792" alt="스크린샷 2024-02-18 오전 10 54 14" src="https://github.com/ejehoon/samo-web1/assets/78858687/b685490c-e524-49d9-85fe-0cb75646ecf9"># AI MEDICO
 
 2023 하계 을지대학교 데이터청년캠퍼스
 
@@ -51,11 +51,13 @@ AWS 서비스와 openAI gpt를 활용하여 국내 병원에서 외국인 환자
 
 프로젝트 일정
 
-[##_Image|kage@BjE8C/btsEm8ENtwk/HLxkEyNrTdBWVsDjBdUXcK/img.png|CDM|1.3|{"originWidth":1168,"originHeight":488,"style":"alignCenter","width":743,"height":310}_##]
+<img width="749" alt="스크린샷 2024-02-18 오전 10 53 38" src="https://github.com/ejehoon/samo-web1/assets/78858687/a0b8a901-766b-4299-9e67-f9cd145eaed6">
+
 
 프로젝트 구성도
 
-[##_Image|kage@b1OBVb/btsEQRJ0dnG/ZtVQTSwpx3MIBR8ox6cxs0/img.png|CDM|1.3|{"originWidth":1104,"originHeight":640,"style":"alignCenter","width":743,"height":310,"filename":"스크린샷 2024-02-14 오후 8.48.00.png"}_##]
+<img width="750" alt="스크린샷 2024-02-18 오전 10 53 48" src="https://github.com/ejehoon/samo-web1/assets/78858687/5339027f-cf90-499c-b089-5d546e37aab0">
+
 
 프로젝트 아키텍처
 
@@ -68,36 +70,44 @@ AWS 서비스와 openAI gpt를 활용하여 국내 병원에서 외국인 환자
 5.  환자에게 정보를 이메일로 전송하기 위해 SES 생성
 6.  Route 53을 통해 도메인 연결
 
-[##_Image|kage@cVz4na/btsEj8y9N3K/kvM26s7G9Pgkd2SFk7VuK0/img.png|CDM|1.3|{"originWidth":1038,"originHeight":606,"style":"alignCenter","width":743,"height":310}_##]
+<img width="745" alt="스크린샷 2024-02-18 오전 10 54 02" src="https://github.com/ejehoon/samo-web1/assets/78858687/0b551cda-0dcb-4426-a8b7-e6c5759156c5">
+
+
 
 ## 4\. 프로젝트 기능
 
 **1\. Login:** 병원 관리자의 계정 생성 및 이용
 
-[##_Image|kage@c1abkD/btsEP4W8RMS/ok214zsyOxxrt3T0cdvKbK/img.png|CDM|1.3|{"originWidth":1234,"originHeight":628,"style":"alignCenter","width":743,"height":310,"filename":"스크린샷 2024-02-14 오후 8.50.59.png"}_##]
+![Uploading 스크린샷 2024-02-18 오전 10.54.14.png…]()
+
+
 
 **2\. Script :** 외국인 환자와 의사 간의 실시간 대화를 음성 혹은 텍스트 입력 (react내부에서 제공하는 음성인식 기능 사용)  
 → 음성에서 텍스트로 변환된 것 혹은 텍스트 입력된 것이 연결된 OPEN AI인 GPT를 이용하여 실시간 번역
 
-[##_Image|kage@scCOj/btsETo7UXEz/vjXTgDqdot2iCJGJNl7d7k/img.png|CDM|1.3|{"originWidth":1250,"originHeight":640,"style":"alignCenter","width":743,"height":310,"filename":"스크린샷 2024-02-14 오후 8.51.22.png"}_##]
+<img width="772" alt="스크린샷 2024-02-18 오전 10 54 31" src="https://github.com/ejehoon/samo-web1/assets/78858687/0e943862-7cd1-4291-b55f-01e9aa501d2a">
+
 
 **3\. Summary :** Script를 토대로 연결된 GPT를 이용하여 요약
 
-[##_Image|kage@BBrCA/btsEP3jEcjA/9kwsQWoBqot4DKZ8epIysK/img.png|CDM|1.3|{"originWidth":1052,"originHeight":516,"style":"alignCenter","width":743,"height":310,"filename":"스크린샷 2024-02-14 오후 8.53.55.png"}_##]
+<img width="722" alt="스크린샷 2024-02-18 오전 10 54 41" src="https://github.com/ejehoon/samo-web1/assets/78858687/d345d96e-c0fb-4765-9618-01065c167ee3">
+
 
 **4\. Medical Reports :** 의사가 환자의 진단을 입력한 후 연결된 OPEN AI인 GPT를 이용하여 진단 형식 안의 내용 그대로 번역  
 **5\. DB :** Cognito 사용자 정보의 DynamoDB, 1:N 관계의 DynamoDB (Patient, Script, Diagnosis)
 
-[##_Image|kage@wz2em/btsEPKYWRiQ/7BwGKGkU3TjJoC39IqtQx1/img.png|CDM|1.3|{"originWidth":1038,"originHeight":522,"style":"alignCenter","width":743,"height":310,"filename":"스크린샷 2024-02-14 오후 8.55.44.png"}_##]
+<img width="769" alt="스크린샷 2024-02-18 오전 10 54 53" src="https://github.com/ejehoon/samo-web1/assets/78858687/b5ce1bd7-9fff-4455-94b7-666e6bb0e841">
 
 **6\. Info :** 1:N 관계의 DynamoDB를 이용하여 각 병원의 환자 정보를 나타내줌  
 → SES를 사용하여 각 환자에게 Script&Summary와 Medical Reports의 정보를 이메일로 전송
 
-[##_Image|kage@bV00HP/btsEQapzxer/kXqvFhB1HE7eufHTm0MG80/img.png|CDM|1.3|{"originWidth":1018,"originHeight":504,"style":"alignCenter","width":743,"height":310,"filename":"스크린샷 2024-02-14 오후 8.54.51.png"}_##]
+<img width="765" alt="스크린샷 2024-02-18 오전 10 55 09" src="https://github.com/ejehoon/samo-web1/assets/78858687/bf5baaf1-2c3d-45b4-a460-11a07f8a9abe">
+
 
 **7\. 보안 및 배포**
 
-[##_Image|kage@eAANrC/btsEQNt4uIo/AKcNwqqcAQhiwhSvUEAWB1/img.png|CDM|1.3|{"originWidth":984,"originHeight":528,"style":"alignCenter","width":743,"height":310,"filename":"스크린샷 2024-02-14 오후 8.57.50.png"}_##]
+<img width="740" alt="스크린샷 2024-02-18 오전 10 55 19" src="https://github.com/ejehoon/samo-web1/assets/78858687/0198e4ed-1de2-44f9-a0d3-185e9c3d987f">
+
 
 ## 5\. 프로젝트 기대효과 및 추가계획
 
