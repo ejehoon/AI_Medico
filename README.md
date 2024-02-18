@@ -77,7 +77,7 @@ AWS 서비스와 openAI gpt를 활용하여 국내 병원에서 외국인 환자
 
 **1\. Login:** 병원 관리자의 계정 생성 및 이용
 
-![Uploading 스크린샷 2024-02-18 오전 10.54.14.png…]()
+<img width="763" alt="스크린샷 2024-02-18 오전 10 58 25" src="https://github.com/ejehoon/AI_Medico/assets/78858687/5ce43a8b-30dd-4a32-9696-48cd5373b221">
 
 
 
