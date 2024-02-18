@@ -1,4 +1,3 @@
-<img width="792" alt="스크린샷 2024-02-18 오전 10 54 14" src="https://github.com/ejehoon/samo-web1/assets/78858687/b685490c-e524-49d9-85fe-0cb75646ecf9"># AI MEDICO
 
 2023 하계 을지대학교 데이터청년캠퍼스
 
