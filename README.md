@@ -12,7 +12,9 @@
 
 AI MEDICO는 외국인 환자를 대상으로 실시간 통역, 진단 번역, 환자 관리 등을 도와주는 AI 의료 코디네이터 서비스
 
-[##_Image|kage@dHKxMn/btsELsdp8cc/k0t485PGGKnjqexFZ6llbK/img.png|CDM|1.3|{"originWidth":1276,"originHeight":608,"style":"alignCenter","width":560,"height":267,"filename":"스크린샷 2024-02-14 오후 8.46.44.png"}_##]
+<img width="576" alt="스크린샷 2024-02-18 오전 10 52 44" src="https://github.com/ejehoon/samo-web1/assets/78858687/8b72ef46-beba-4242-9ffc-76fec70236cc">
+
+
 
 ## 2\. 프로젝트 목표
 
