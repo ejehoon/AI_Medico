@@ -129,11 +129,8 @@ AWS 서비스와 openAI gpt를 활용하여 국내 병원에서 외국인 환자
 
 ## 6. 문제 및 해결과정:
 
-실시간 통번역과 진단번역에 사용하려던 AWS comprehend medical, transcribe medical 서비스가 낮은 음성 인식률의 문제를 해결하기 위해 React에서 제공하는 음성인식 서비스를 도입하였고 번역서비스는 비교를 통해보다 높은 정확도를 가진 GPT를 선택하여 API를 연결하였습니다.
-프로젝트 마무리를 하는도중 CPU 자원을 초과하여 협업하던 cloud9 환경에 접속할 수 없는 이슈가 발생하였습니다.
-이를 해결하기 위해 모두가 Cloud9 환경에서 나오고
-CloudWatch를 모니터링 하며 Cpu 사용량 지표가 낮아진 후 한명이 접속하여 git push를 하고 EC2를 더욱 높은 사양으로 스케일 업해 문제를 해결하였습니다.
-
+1. 실시간 통·번역 및 진단 번역 문제: AWS Comprehend Medical 및 Transcribe Medical을 사용할 계획이었으나, 음성 인식률이 낮아, 더 높은 정확도를 제공하는 GPT 기반 API로 전환했습니다. 이를 위해 React의 Speech Recognition 기능을 활용해 해결책을 마련했습니다.
+2. 자원 초과 문제: 프로젝트 마무리 단계에서 CPU 자원을 초과하는 문제가 발생, Cloud9 환경 접속이 불가능했습니다. 팀원 모두가 Cloud9 환경에서 로그아웃한 후, CloudWatch를 통해 CPU 사용량을 모니터링하고, 자원이 안정될 때까지 기다린 후 문제를 해결했습니다.
 
 ## 7. 결과 및 성과: 
 마감날 배포까지 완료하여 최종 발표를 성공적으로 마무리하였습니다. 데이터 청년 캠퍼스 우수상과 함께 클라우드 사용부분 (AWS)에서 1위를 달성하였습니다.
@@ -141,10 +138,18 @@ CloudWatch를 모니터링 하며 Cpu 사용량 지표가 낮아진 후 한명�
 
 
 ## 8. 기여한 점 :
-AWS comprehend medical, transcribe medical과 GPT를 비교할 수 있게 A/B테스트를 진행하였습니다.
-팀원들과의 협업을 위해 Cloud9에 개발환경을 세팅하고 git으로 유지관리를 하였습니다.
+AWS Comprehend Medical, Transcribe Medical과 GPT를 직접 비교 평가 후 GPT 채택
+Cloud9에 개발 환경 설정 및 Git을 이용한 유지보수와 버전 관리를 주도.
+Cognito를 사용한 회원가입 시스템 구축.
+React와 Speech Recognition을 통한 실시간 음성 인식 기능 구현.
+Lambda를 통한 GPT API 호출로 번역 및 요약 기능 구현.
+SES 서비스를 연동하여 환자에게 메일 전송 기능 구현.
 
 
+## 9. 배운 점:
+클라우드 서비스를 처음부터 배포까지 직접 경험하며, 팀원들과 함께 성장할 수 있었습니다.
+GitHub과 Cloud9을 활용한 협업 과정에서 팀워크와 의사소통의 중요성을 배웠습니다.
+프로젝트를 통해 버전 관리 및 유지보수의 중요성을 실감했습니다.
 
 
 [PPT 발표자료](https://docs.google.com/presentation/d/1NPoMbiN7A91xVRwXv3Y_7JrpbP1mxt1Z/edit?usp=sharing&ouid=109867150069623460304&rtpof=true&sd=true)
