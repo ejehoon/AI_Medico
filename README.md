@@ -138,18 +138,18 @@ AWS 서비스와 openAI gpt를 활용하여 국내 병원에서 외국인 환자
 
 
 ## 8. 기여한 점 :
-AWS Comprehend Medical, Transcribe Medical과 GPT를 직접 비교 평가 후 GPT 채택
-Cloud9에 개발 환경 설정 및 Git을 이용한 유지보수와 버전 관리를 주도.
-Cognito를 사용한 회원가입 시스템 구축.
-React와 Speech Recognition을 통한 실시간 음성 인식 기능 구현.
-Lambda를 통한 GPT API 호출로 번역 및 요약 기능 구현.
-SES 서비스를 연동하여 환자에게 메일 전송 기능 구현.
+AWS Comprehend Medical, Transcribe Medical과 GPT를 직접 비교 평가 후 GPT 채택  
+Cloud9에 개발 환경 설정 및 Git을 이용한 유지보수와 버전 관리를 주도.  
+Cognito를 사용한 회원가입 시스템 구축.  
+React와 Speech Recognition을 통한 실시간 음성 인식 기능 구현.  
+Lambda를 통한 GPT API 호출로 번역 및 요약 기능 구현.  
+SES 서비스를 연동하여 환자에게 메일 전송 기능 구현.  
 
 
 ## 9. 배운 점:
-클라우드 서비스를 처음부터 배포까지 직접 경험하며, 팀원들과 함께 성장할 수 있었습니다.
-GitHub과 Cloud9을 활용한 협업 과정에서 팀워크와 의사소통의 중요성을 배웠습니다.
-프로젝트를 통해 버전 관리 및 유지보수의 중요성을 실감했습니다.
+클라우드 서비스를 처음부터 배포까지 직접 경험하며, 팀원들과 함께 성장할 수 있었습니다.  
+GitHub과 Cloud9을 활용한 협업 과정에서 팀워크와 의사소통의 중요성을 배웠습니다.  
+프로젝트를 통해 버전 관리 및 유지보수의 중요성을 실감했습니다.  
 
 
 [PPT 발표자료](https://docs.google.com/presentation/d/1NPoMbiN7A91xVRwXv3Y_7JrpbP1mxt1Z/edit?usp=sharing&ouid=109867150069623460304&rtpof=true&sd=true)
