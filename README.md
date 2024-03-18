@@ -1,9 +1,11 @@
 
 2023 하계 을지대학교 데이터청년캠퍼스
 
--   개발 기간
+-   개발 기간 : 23.08.01 ~ 23.08.28
+-   사용기술 : EC2,Lambda,Route53,SES,Cognito,DynamoDB,React
+-   수상 : 데이터 청년 캠퍼스 우수상 & 클라우드(AWS) 1위
+-   맡은 일 : 서버, 백엔드
 
-23.08.01 ~ 23.08.28
 
 ---
 
@@ -125,26 +127,25 @@ AWS 서비스와 openAI gpt를 활용하여 국내 병원에서 외국인 환자
 
 ---
 
-## 회고
+## 6. 문제 및 해결과정:
 
-편입 후 처음으로 진행하는 팀 프로젝트였다.  
-한달 프로젝트 기간에 AWS에서 클라우드 비용을 지원받기 떄문에  
-클라우드를 최대한 많이 사용해보자 하여 분석보다는 클라우드쪽에 집중하였다.
+실시간 통번역과 진단번역에 사용하려던 AWS comprehend medical, transcribe medical 서비스가 낮은 음성 인식률의 문제를 해결하기 위해 React에서 제공하는 음성인식 서비스를 도입하였고 번역서비스는 비교를 통해보다 높은 정확도를 가진 GPT를 선택하여 API를 연결하였습니다.
+프로젝트 마무리를 하는도중 CPU 자원을 초과하여 협업하던 cloud9 환경에 접속할 수 없는 이슈가 발생하였습니다.
+이를 해결하기 위해 모두가 Cloud9 환경에서 나오고
+CloudWatch를 모니터링 하며 Cpu 사용량 지표가 낮아진 후 한명이 접속하여 git push를 하고 EC2를 더욱 높은 사양으로 스케일 업해 문제를 해결하였습니다.
 
-처음 계획했던 것은 환자와 의사가 소통하는 번역 도구로 [Amazon Transcirbe](https://aws.amazon.com/ko/pm/transcribe/?gclid=Cj0KCQiA5rGuBhCnARIsAN11vgRKUqhcCIBOhnJXjWkdarsrGMlSpk6zQHaFfG2rXsuOG6o7HIlK5aUaAqyyEALw_wcB&trk=3d9da6a1-603c-47a2-8832-148f358f6974&sc_channel=ps&ef_id=Cj0KCQiA5rGuBhCnARIsAN11vgRKUqhcCIBOhnJXjWkdarsrGMlSpk6zQHaFfG2rXsuOG6o7HIlK5aUaAqyyEALw_wcB:G:s&s_kwcid=AL!4422!3!652835845611!e!!g!!amazon%20transcription!19910625295!147224435643)를 사용하고  
-번역된 내용을 요약하는 진단서로는 [Amazon Comprehend Medical](https://aws.amazon.com/ko/comprehend/medical/)를 생각했다.
 
-그치만 실시간 음성인식은 React에서 제공하는 Speech Recognition이 사용하기도 쉽고 성능이 더 뛰어났고  
-진단서 요약면에서도 Chatgpt API를 활용하는 것이 Comprehend Medical을 사용하는 것 보단 원하는 결과에 더 가깝게 나왔다.  
-Chatgpt API를 웹페이지와 연결하기 위해 Lambda를 사용하여 배포하였고  
-Lambda가 진짜 가성비 사기라는 것을 느꼈다.  
-또한 RDBMS를 사용하지않고 DynamoDB를 사용한 것도 의미있다 생각한다.
+## 7. 결과 및 성과: 
+마감날 배포까지 완료하여 최종 발표를 성공적으로 마무리하였습니다. 데이터 청년 캠퍼스 우수상과 함께 클라우드 사용부분 (AWS)에서 1위를 달성하였습니다.
 
-지금와서 생각해보면 웹프레임워크나 보안과 관련해서 부족한 부분이 많았지만 방학동안 정말 많은 것을 배웠다.  
-프로젝트가 끝나고 사용한 AWS 기술들을 더 자세히 알아가고자  
-AWS Solutions Architect Associate(SAA)와 Developer Associate(DVA)자격증을 취득하였다.
 
----
+
+## 8. 기여한 점 :
+AWS comprehend medical, transcribe medical과 GPT를 비교할 수 있게 A/B테스트를 진행하였습니다.
+팀원들과의 협업을 위해 Cloud9에 개발환경을 세팅하고 git으로 유지관리를 하였습니다.
+
+
+
 
 [PPT 발표자료](https://docs.google.com/presentation/d/1NPoMbiN7A91xVRwXv3Y_7JrpbP1mxt1Z/edit?usp=sharing&ouid=109867150069623460304&rtpof=true&sd=true)
 
